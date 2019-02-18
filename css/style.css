@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700');
+
+body
+{
+    background-color:#ffffff;
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+}
+
+nav a
+{
+/*  color:#B3BABE; */
+  color: black;
+  font-weight: 700;
+  line-height: 1.8em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.current
+{
+  color: white;
+  background-color: black;
+/*  color:#8B5AA5; */
+}
+
+h1
+{
+    font-weight: 200;
+    font-size: 47px;
+    line-height: 2em;
+    text-transform: capitalize;
+}
+
+h2
+{
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 1.8em;
+}
+
+h3
+{
+  font-weight: 700;
+  text-transform: uppercase;
+}
