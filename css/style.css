@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700');
+
+
 a.skip-main {
     left:-999px;
     position:absolute;
@@ -18,8 +20,6 @@ a.skip-main:focus, a.skip-main:active {
     overflow:auto;
     margin: 10px 35%;
     padding:5px;
-    border-radius: 15px;
-    border:4px solid yellow;
     text-align:center;
     font-size:1.2em;
     z-index:999;
