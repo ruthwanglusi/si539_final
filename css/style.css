@@ -35,30 +35,42 @@ body
     line-height: 1.5em;
     font-family: 'Nunito Sans', Arial, sans-serif;
     margin:2rem;
+
+    display: grid;
+    grid-auto-rows: 4fr max-content 1fr;
+    justify-content: center;
+    height: 100vh;
+
 }
 
 nav a
 {
-/*  color:#B3BABE; */
   color: black;
   font-weight: 700;
   line-height: 1.8em;
   text-transform: uppercase;
   text-decoration: none;
+  writing-mode: vertical-rl;
+
+}
+nav ul {
+  display: grid;
+  direction: rtl;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill,minmax(20px, 1fr));
 }
 
 .current
 {
   color: white;
   background-color: black;
-/*  color:#8B5AA5; */
 }
 
 h1
 {
     font-weight: 200;
     font-size: 47px;
-    line-height: 2em;
+    line-height: 4rem;
     text-transform: capitalize;
 }
 
@@ -75,19 +87,29 @@ h3
   text-transform: uppercase;
 }
 
+footer{
+  text-align: left;
+}
+
 img{
   display: block;
 }
 
-main{
-  display: grid;
+article{
+  display: flex;
+  flex-flow: column;
+  padding: 2rem;
 }
 
+
 .index_panels {
-  grid-template-columns: repeat(auto-fit minmax(100px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 500;
-  /* grid-auto-flow: column; */
+  grid-gap: 0.5rem;
+  grid-auto-flow: dense;
 }
+
 .scroll_center {
-  grid-column: span 2;
+  background-color: #ddd;
 }
