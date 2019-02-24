@@ -86,7 +86,7 @@ main{
 .index_panels {
   grid-template-columns: repeat(auto-fit minmax(100px, 1fr));
   grid-auto-rows: 500;
-  grid-auto-flow: column;
+  /* grid-auto-flow: column; */
 }
 .scroll_center {
   grid-column: span 2;
