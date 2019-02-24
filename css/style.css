@@ -40,7 +40,6 @@ body
     grid-auto-rows: 4fr max-content 1fr;
     justify-content: center;
     height: 100vh;
-
 }
 
 nav a
@@ -72,6 +71,7 @@ h1
     font-size: 47px;
     line-height: 4rem;
     text-transform: capitalize;
+    z-index: 2;
 }
 
 h2
@@ -87,8 +87,8 @@ h3
   text-transform: uppercase;
 }
 
-footer{
-  text-align: left;
+main{
+  z-index: 2
 }
 
 img{
@@ -101,6 +101,12 @@ article{
   padding: 2rem;
 }
 
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
 
 .index_panels {
   display: grid;
@@ -111,7 +117,8 @@ article{
 }
 
 .scroll_center {
-  background-color: #ddd;
+  background-color: #fff;
+  opacity: 0.9;
 }
 
 i.fab{
@@ -119,8 +126,26 @@ i.fab{
   padding: 20px;
 }
 
-footer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
+.background{
+  position: absolute;
+  left:0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.overlay{
+  height: 100vh;
+  width: 100vw;
+  position:absolute;
+  left: 0;
+  background: #fff;
+  z-index:1;
+  opacity: 0.8;
 }

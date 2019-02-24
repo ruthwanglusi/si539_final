@@ -26,18 +26,7 @@
     <div class="background">
       <video src="videos/background.mov" autoplay muted loop = "true"></video>
     </div>
-    <script>
-      var vid = document.getElementsByClassName("background");
-
-      function getPlaySpeed() {
-        alert(vid.playbackRate);
-      }
-
-      function setPlaySpeed() {
-        vid.playbackRate = 0.1;
-      }
-    </script>
-
+    <div class="overlay"></div>
 
     <h1>Hi! I'm Ruth, a UX designer for FUTURE experiences.</h1>
     <!-- future and ux: captialized and add spetial gradient effect.
@@ -46,10 +35,10 @@
 
 <!-- center: scrolling up and down.placeholder image 185px, 300px-->
   <main id = "content" class="index_panels" tabindex="-1">
-    <article class="scroll_center">
+    <article>
       <!-- Project 1 Autonomous Vehicle -->
       <a href="project.html">
-      <img src="images/text_placeholder.png" alt="autonomous vehicle and people">
+      <img src="images/vehicle.png" alt="autonomous vehicle and people">
       </a>
       <h2>Autonomous Vehicle</h2>
         <p>
@@ -58,9 +47,9 @@
         </p>
     </article>
 
-    <article>
+    <article class="scroll_center">
       <!-- Project 2 VR Musical Interface -->
-      <img src="images/placeholder.png" alt="playing music in virtual reality">
+      <img src="images/orbit.png" alt="playing music in virtual reality">
       <h2>VR Musical Interface</h2>
         <p>
           This is a project description.
@@ -70,7 +59,7 @@
 
     <article>
       <!-- Project 3 Inner-city Preservation -->
-      <img src="images/placeholder.png" alt="mobile APP for historic preservation">
+      <img src="images/urban.png" alt="mobile APP for historic preservation">
       <h2>Inner-city Preservation</h2>
         <p>
           This is another project description.
@@ -80,7 +69,7 @@
 
     <article>
       <!-- Project 4 Web Usability -->
-      <img src="images/placeholder.png" alt="usability consulting for web usability">
+      <img src="images/clubcar.png" alt="usability consulting for web usability">
       <h2>Website Usability</h2>
         <p>
           This is a project description.
@@ -90,7 +79,7 @@
 
     <article>
         <!-- Project 5 No-sight Game -->
-      <img src="images/placeholder.png" alt="making a no-sight driving game">
+      <img src="images/sight.png" alt="making a no-sight driving game">
       <h2>No-sight Game</h2>
         <p>
           This is a project description.
@@ -98,6 +87,15 @@
         </p>
     </article>
 
+    <article>
+        <!-- Project 6 Hospital Co-creation -->
+      <img src="images/hospital.png" alt="co-design a hospital facility">
+      <h2>Hopstial Co-creation</h2>
+        <p>
+          This is a project description.
+          participatory design for hospital
+        </p>
+    </article>
 
   </main>
 
