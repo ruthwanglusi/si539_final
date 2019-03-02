@@ -40,13 +40,18 @@ body
     /* background-image: url('../images/orbit.png'); */
 }
 
+header
+{
+    display: flex;
+    height: 80vh;
+}
+
 h1
 {
     font-weight: 200;
     font-size: 8vw;
     line-height: 13vw;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin:auto;
 }
 
 #h1_ux
@@ -226,7 +231,7 @@ i.fab{
 
 }
 
-@media (min-width:768px)
+@media (min-width:1100px)
 {
   article a img
   {
