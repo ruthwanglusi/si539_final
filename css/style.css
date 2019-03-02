@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700');
 
 
-a.skip-main {
+a.skip-main
+{
     left:-999px;
     position:absolute;
     top:auto;
@@ -10,7 +11,8 @@ a.skip-main {
     overflow:hidden;
     z-index:-999;
 }
-a.skip-main:focus, a.skip-main:active {
+a.skip-main:focus, a.skip-main:active
+{
     color: #fff;
     background-color:#000;
     left: auto;
@@ -25,15 +27,26 @@ a.skip-main:focus, a.skip-main:active {
     z-index:999;
 }
 
+body
+{
+    background-color:#ffffff;
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5rem;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    margin:1rem;
+
+    /* background-image: url('../images/orbit.png'); */
+}
+
 h1
 {
     font-weight: 200;
     font-size: 47px;
     line-height: 4rem;
     text-transform: capitalize;
-
-    /* position: relative;
-    z-index: 2; */
 }
 
 h2
@@ -49,23 +62,6 @@ h3
   text-transform: uppercase;
 }
 
-body
-{
-    background-color:#ffffff;
-    color: #000000;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5rem;
-    font-family: 'Nunito Sans', Arial, sans-serif;
-    margin:2rem;
-}
-
-nav {
-  position: relative;
-  z-index: 2;
-}
-
 nav a
 {
   color: black;
@@ -74,15 +70,56 @@ nav a
   text-transform: uppercase;
   text-decoration: none;
   writing-mode: vertical-rl;
+}
+
+.current
+{
+  color: white;
+  background-color: black;
+}
+
+.header_grid
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 1fr 1fr;
+}
+
+.header_grid nav
+{
+  grid-column: 3 /span 1;
+ /* add inline display */
+}
+
+.header_grid nav ul
+{
+  display: grid;
+  direction: rtl;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(8,1fr);
+}
+
+.header_grid h1
+{
+  grid-template-columns: 4fr 2fr 2fr 3fr 6fr;
 
 }
 
-main{
-  z-index: 2
+.main_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 500;
+  grid-gap: 0.5rem;
+  grid-auto-flow: dense;
 }
 
-img{
-  display: flex;
+.scroll_center {
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+img
+{
   object-fit: cover;
 }
 
@@ -96,43 +133,6 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
-}
-
-
-.current
-{
-  color: white;
-  background-color: black;
-}
-
-
-/* references: https://labs.jensimmons.com/2017/01-003E.html */
-.grid-container{
-  display: grid;
-  /* grid-template-columns: 1fr 40% 2fr 2fr 3fr; */
-  grid-template-rows: 1fr max-content 1fr;
-
-}
-
-/* nav ul {
-  display: grid;
-  direction: rtl;
-  grid-gap: 0.5rem;
-  grid-template-columns: repeat(auto-fill,minmax(20px, 1fr));
-} */
-
-.index_panels {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 500;
-  grid-gap: 0.5rem;
-  grid-auto-flow: dense;
-}
-
-.scroll_center {
-  background-color: #fff;
-  opacity: 0.9;
 }
 
 i.fab{
@@ -141,14 +141,15 @@ i.fab{
 }
 
 
-.background video {
+.background {
+
   position:fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 150%;
+  width: 150%;
+  opacity: 10%;
 
-  z-index: -1;
-
+  z-index: -10;
 
 }
