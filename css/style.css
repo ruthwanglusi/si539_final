@@ -112,7 +112,7 @@ article
 {
   display: flex;
   flex-flow: column;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 article a
@@ -210,3 +210,7 @@ article:nth-child(6)
   grid-column: -6 / -4;
   grid-row: 10 / 12;
 }
+
+/* @media (min-width:1000px) {
+
+} */
