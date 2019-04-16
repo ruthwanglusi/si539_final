@@ -243,6 +243,6 @@ i.fab{
   }
 
   .back{
-    background-color: red;
+    transform: rotate(90deg);
   }
 }
