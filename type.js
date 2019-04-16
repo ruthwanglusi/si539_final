@@ -1,8 +1,11 @@
 var i = 0;
-var txt = 'Lorem ipsum dummy text blabla.';
+var txt = "Hi! I'm Ruth. A UX designer for FUTURE experiences.";
 var speed = 50;
 
-function typeWriter() {
+console.log(txt);
+
+function typeWriter()
+{
   if (i < txt.length) {
     document.getElementById("headline").innerHTML += txt.charAt(i);
     i++;

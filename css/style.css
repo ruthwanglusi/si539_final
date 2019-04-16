@@ -46,24 +46,16 @@ header
     height: 80vh;
 }
 
-h1
+#headline
 {
-    font-weight: 200;
+    font-weight: 400;
     font-size: 8vw;
     line-height: 13vw;
     margin:auto;
+    color:#000000;
+    text-shadow: 0.12rem 0.05rem #D994C0;
 }
 
-#h1_ux
-{
-  font-weight: 600;
-}
-
-#h1_future
-{
-  font-weight: 600;
-  color:#8B5AA5;
-}
 
 h2
 {
@@ -90,7 +82,7 @@ nav
 
 nav a
 {
-  color: black;
+  color: #8B5AA5;
   font-weight: 700;
   line-height: 2em;
   text-transform: uppercase;
@@ -100,6 +92,7 @@ nav a
 {
   color: white;
   background-color: black;
+  box-shadow: 1px 1px #D994C0;
 }
 
 /* reference: https://labs.jensimmons.com/ */
@@ -243,6 +236,6 @@ i.fab{
   }
 
   .back{
-    transform: rotate(90deg);
+    background-color: red;
   }
 }
