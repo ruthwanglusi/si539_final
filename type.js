@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "Hi! I'm Ruth. A UX designer for FUTURE experiences.";
+var txt = "Hi! I'm Ruth. I design FUTURE experiences.";
 var speed = 50;
 
 console.log(txt);
