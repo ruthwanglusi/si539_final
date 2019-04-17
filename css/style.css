@@ -60,20 +60,21 @@ header
 h2
 {
   font-weight: 600;
-  font-size: 3vw;
-  line-height: 4.85vw;
   text-align: left;
-  padding: 2vw;
+  font-size: 26px;
+  /* font-size: 3vw;
+  line-height: 4.85vw;
+  padding: 2vw; */
 }
 
 p
 {
   font-weight: 300;
-  font-size: 2vw;
-  line-height: 2.43vw;
   text-align: left;
+  /* font-size: 2vw;
+  line-height: 2.43vw;
   padding-left: 2vw;
-  padding-right: 2vw;
+  padding-right: 2vw; */
 }
 
 h3
@@ -166,6 +167,20 @@ i.fab{
 
 @media (min-width:600px)
 {
+  h2
+  {
+    font-size: 3vw;
+    line-height: 4.85vw;
+    padding: 2vw;
+  }
+
+  p
+  {
+    font-size: 2vw;
+    line-height: 2.43vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
 
   nav
   {
