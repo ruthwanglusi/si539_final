@@ -22,29 +22,33 @@
 <body class="wrapper_grid">
   <a class="skip-main" href="#content">Skip to main content</a>
 
-  <nav id="navbar">
+  <nav>
       <ul class="navigations">
-        <li><a href="index.html" class="current"> highlight </a></li>
+        <li><a href="index.html"> highlight </a></li>
         <li><a href="conference.html"> conference </a></li>
         <li><a href="journey.html"> journey </a></li>
-        <li><a href="contact.html"> contact </a></li>
+        <li><a href="contact.html" class="current"> contact </a></li>
       </ul>
   </nav>
-  <script src = "sticky.js">
-  </script>
 
 <main id = "content">
   <h2>Email</h2>
-    <p>thisismyemail@gmail.com</p>
+    <p>myemail@email.com</p>
   <h2>Phone</h2>
     <p>789-456-1230</p>
   <h2>Mail Address</h2>
-    <p>987 S Nowhere St.
+    <p>987 S Nowhere St. <br>
       Anystate, USA 48795</p>
-  <h2>Social Network</h2>
-    <a href="https://www.youtube.com/channel/UCQ0ERPRvy_31mpH09z5ETjA">Youtube</a>
-    <a href="https://github.com/ruthwanglusi">Github</a>
-    <a href="https://www.linkedin.com/in/ruthwanglusi">LinkdIn</a>
+
+  <div class="callout">
+    <div class="callout-header">Looking for UX Internship</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <div class="callout-container">
+      <p>Let's get in touch on Linkedin <a href="https://www.linkedin.com/in/ruthwanglusi"><i class="fab fa-linkedin fa-3x" aria-label = "linkedin"></i></a></p>
+
+    </div>
+  </div>
 </main>
+
 </body>
 </html>
