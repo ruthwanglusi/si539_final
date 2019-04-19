@@ -53,7 +53,7 @@ header
     line-height: 13vw;
     margin:auto;
     color:#000000;
-    text-shadow: 0.12rem 0.05rem #D994C0;
+    text-shadow: 0.3rem 0.05rem #D994C0;
 }
 
 
@@ -62,19 +62,12 @@ h2
   font-weight: 600;
   text-align: left;
   font-size: 26px;
-  /* font-size: 3vw;
-  line-height: 4.85vw;
-  padding: 2vw; */
 }
 
 p
 {
   font-weight: 300;
   text-align: left;
-  /* font-size: 2vw;
-  line-height: 2.43vw;
-  padding-left: 2vw;
-  padding-right: 2vw; */
 }
 
 h3
@@ -306,7 +299,7 @@ i.fab{
 
   .flip-front
   {
-    background-color: #bbb;
+    background-color: #fff;
     color: black;
   }
 
