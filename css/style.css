@@ -157,7 +157,8 @@ footer
   justify-content: center;
 }
 
-i.fab{
+i.fab
+{
   color: #aaa;
   padding: 20px;
 }
@@ -204,6 +205,13 @@ iframe
   display: none;
   overflow: hidden;
 }
+
+.callout
+{
+  display: none;
+}
+
+
 
 @media (min-width:600px)
 {
@@ -365,6 +373,49 @@ iframe
   {
     background-color: #D994C080;
     transform: rotateY(180deg);
+  }
+
+  .callout {
+    display: block;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+  }
+
+  /* Callout header */
+  .callout-header {
+    padding: 25px 15px;
+    background: black;
+    font-size: 30px;
+    color: white;
+    border-radius: 0px 20px 0px 0px;
+
+  }
+
+  /* Callout container/body */
+  .callout-container {
+    padding: 15px;
+    background-color: #D994C080;
+    color: black;
+    border-radius: 0px 0px 0px 40px;
+
+  }
+
+  /* Close button */
+  .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #D994C0;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  /* Change color on mouse-over */
+  .closebtn:hover {
+    color: #fffcbb;
   }
 
 }
