@@ -268,11 +268,54 @@ iframe
     margin-right: 15vw;
   }
 
+  .journey_grid
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 500;
+    margin: auto;
+    grid-gap: 2rem;
+  }
+
   .accordion
   {
     font-size: 2vw;
   }
 
+  .parallax:nth-of-type(1)
+  {
+    background-image: url('../images/us.jpg');
+  }
+
+  .parallax:nth-of-type(2)
+  {
+    background-image: url('../images/egypt.jpg');
+  }
+
+  .parallax:nth-of-type(3)
+  {
+    background-image: url('../images/canada.jpg');
+  }
+
+  .parallax
+  {
+    display: grid;
+    height: 50vh;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .parallax-text h2
+  {
+    color:black;
+    background-color: white;
+    opacity: 0.8;
+    margin: 0 auto;
+  }
 
   article a img{
     display: none;
