@@ -121,7 +121,7 @@ nav a
 .proj_grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content max-content;
+  grid-template-rows: min-content max-content;
   grid-gap: 2rem;
   grid-auto-flow: dense;
 }
@@ -131,6 +131,11 @@ nav a
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   font-weight: 400;
+}
+
+header img
+{
+  display: none;
 }
 
 img
@@ -468,5 +473,25 @@ iframe
 
 @media print
 {
+  *{
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  nav,
+  footer
+  {
+    display: none;
+  }
+
+  header img
+  {
+    display: block;
+    width: 200px;
+    height: 200px;
+
+  }
 
 }
