@@ -53,7 +53,7 @@ header
     line-height: 13vw;
     margin:auto;
     color:#000000;
-    text-shadow: 0.3rem 0.05rem #D994C0;
+    text-shadow: 0.2rem 0.05rem #D994C0;
 }
 
 
@@ -84,6 +84,7 @@ a
 nav
 {
   text-align: right;
+  padding: 1rem;
 }
 
 nav a
@@ -134,7 +135,8 @@ article a
   color: black;
 }
 
-footer{
+footer
+{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,18 +147,39 @@ i.fab{
   padding: 20px;
 }
 
+video
+{
+  width: 100vw;
+  display: block;
+  margin: 0 auto;
+}
 
-/* .background {
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100vw;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  /* margin: 2rem; */
+}
 
-  position:fixed;
-  top: 0;
-  left: 0;
-  height: 150%;
-  width: 150%;
-  opacity: 10%;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
 
-  z-index: -10;
-} */
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
 
 @media (min-width:600px)
 {
@@ -187,14 +210,14 @@ i.fab{
     display: grid;
     grid-gap: 0.5rem;
     grid-template-rows: repeat(4,1fr);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   /* add to nav by sticky.js */
   .sticky {
     position: fixed;
     top: 0;
-    width: 97.54%;
+    width: 100%;
   }
 
   .sticky + .content {
@@ -206,6 +229,11 @@ i.fab{
     display: grid;
     grid-template-rows: repeat(15, 13vw);
     grid-template-columns: repeat(7, 13vw);
+  }
+
+  video
+  {
+    width: 60vw;
   }
 
   article a img{
