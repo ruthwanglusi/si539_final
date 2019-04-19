@@ -228,7 +228,7 @@ iframe
 
 
 
-@media (min-width:600px)
+@media (min-width:768px)
 {
   h2
   {
@@ -329,7 +329,8 @@ iframe
     display: none;
   }
 
-  article {
+  article
+  {
     self-align: center;
     justify-content: left;
     background-color: #D994C080;
@@ -373,7 +374,7 @@ iframe
 
 }
 
-@media (min-width:900px)
+@media (min-width:1000px)
 {
   article a img
   {
@@ -426,7 +427,8 @@ iframe
     transform: rotateY(180deg);
   }
 
-  .callout {
+  .callout
+  {
     display: block;
     position: fixed;
     bottom: 35px;
@@ -435,7 +437,6 @@ iframe
     max-width: 300px;
   }
 
-  /* Callout header */
   .callout-header {
     padding: 25px 15px;
     background: black;
@@ -445,17 +446,16 @@ iframe
 
   }
 
-  /* Callout container/body */
-  .callout-container {
+  .callout-container
+  {
     padding: 15px;
     background-color: #D994C080;
     color: black;
     border-radius: 0px 0px 0px 40px;
-
   }
 
-  /* Close button */
-  .closebtn {
+  .closebtn
+  {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -464,8 +464,8 @@ iframe
     cursor: pointer;
   }
 
-  /* Change color on mouse-over */
-  .closebtn:hover {
+  .closebtn:hover
+  {
     color: #fffcbb;
   }
 
