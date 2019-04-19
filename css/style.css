@@ -61,7 +61,8 @@ h2
 {
   font-weight: 600;
   text-align: left;
-  font-size: 26px;
+  font-size: 24px;
+  padding:0.5rem;
 }
 
 p
@@ -121,7 +122,7 @@ nav a
 .proj_grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 2fr;
   grid-gap: 2rem;
   grid-auto-flow: dense;
 }
@@ -159,7 +160,7 @@ footer
 
 i.fab
 {
-  color: #aaa;
+  color: #8B5AA5;
   padding: 20px;
 }
 
