@@ -118,6 +118,21 @@ nav a
   grid-auto-flow: dense;
 }
 
+.proj_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-gap: 2rem;
+  grid-auto-flow: dense;
+}
+
+.intro
+{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-weight: 400;
+}
+
 img
 {
   object-fit: cover;
@@ -147,34 +162,43 @@ i.fab{
   padding: 20px;
 }
 
-video
+iframe
 {
-  width: 100vw;
-  display: block;
-  margin: 0 auto;
+  display: grid;
+  grid-row: 2 / 3;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #eee;
-  color: #444;
+  display: grid;
   cursor: pointer;
+  transition: 0.4s;
+
   padding: 18px;
-  width: 100vw;
-  text-align: left;
   border: none;
   outline: none;
-  transition: 0.4s;
-  /* margin: 2rem; */
+  border-radius: 8px;
+  background-color: #eee;
+  box-shadow: 1px 1px 1px #D994C0;
+
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
+.active, .accordion:hover
+{
+  font-weight: 600;
+  background-color: #8B5AA5;
+  color: white;
 }
 
 /* Style the accordion panel. Note: hidden by default */
-.panel {
+.panel
+{
   padding: 0 18px;
   background-color: white;
   display: none;
@@ -226,15 +250,21 @@ video
 
   .main_grid
   {
-    display: grid;
     grid-template-rows: repeat(15, 13vw);
     grid-template-columns: repeat(7, 13vw);
   }
 
-  video
+  .proj_grid
   {
-    width: 60vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
+
+  .accordion
+  {
+    font-size: 2vw;
+  }
+
 
   article a img{
     display: none;
