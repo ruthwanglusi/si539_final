@@ -112,7 +112,8 @@ nav a
 {
   margin: 1rem;
   display: grid;
-  grid-template-rows: 1fr auto auto auto auto 0.5fr
+  grid-template-rows: 1fr auto auto auto auto 0.5fr;
+  grid-template-columns: 1fr;
 }
 
 .main_grid {
