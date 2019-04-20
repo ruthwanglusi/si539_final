@@ -81,6 +81,11 @@ a
   text-decoration: none;
 }
 
+ul
+{
+  list-style-type:square;
+}
+
 nav
 {
   text-align: right;
