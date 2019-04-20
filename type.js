@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "Hi! I'm Ruth. I design FUTURE experiences.";
+var txt = "Hi! I'm Ruth. I design FUTURE UX experiences.";
 var speed = 50;
 
 function typeWriter()

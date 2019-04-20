@@ -33,7 +33,7 @@ body
     color: #000000;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5rem;
     font-family: 'Nunito Sans', Arial, sans-serif;
 
@@ -133,6 +133,12 @@ nav a
   font-weight: 400;
 }
 
+main
+{
+  margin:0 auto;
+}
+
+
 header img
 {
   display: none;
@@ -185,7 +191,7 @@ iframe
   outline: none;
   border-radius: 8px;
   background-color: #eee;
-  box-shadow: 1px 1px 1px #D994C0;
+  box-shadow: 1px 2px 1px #8B5AA5;
 
   color: #000;
   font-size: 18px;
@@ -230,14 +236,14 @@ iframe
 
 @media (min-width:768px)
 {
-  h2
+  .flip-back h2
   {
     font-size: 3vw;
     line-height: 4.85vw;
     padding: 2vw;
   }
 
-  p
+  .flip-back p
   {
     font-size: 2vw;
     line-height: 2.43vw;
@@ -440,7 +446,7 @@ iframe
   .callout-header {
     padding: 25px 15px;
     background: black;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     border-radius: 0px 20px 0px 0px;
 
