@@ -116,6 +116,7 @@ nav a
   display: grid;
   grid-template-rows: max-content auto auto auto auto 0.5fr;
   grid-template-columns: 1fr;
+  margin: 2rem;
 }
 
 .main_grid
